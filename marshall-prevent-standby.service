@@ -1,0 +1,7 @@
+[Unit]
+Description=Marshall Prevent Standby Service
+
+[Service]
+Type=oneshot
+Restart=no
+ExecStart=/bin/sh -c /opt/marshall-prevent-standby/play_audio.sh

@@ -1,0 +1,10 @@
+[Unit]
+Description=Marshall Prevent Standby Timer
+
+[Timer]
+OnBootSec=15min
+OnUnitActiveSec=5min
+Unit=marshall-prevent-standby.service
+
+[Install]
+WantedBy=timers.target
